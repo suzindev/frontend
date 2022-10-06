@@ -1,2 +1,17 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Ubuntu, "Helvetica Neue", sans-serif; }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu;
+  box-sizing: border-box;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  transition: .4s;
+}
+
+a:hover {
+  color: #DEC129;
+}
