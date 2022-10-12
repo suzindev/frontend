@@ -1,0 +1,22 @@
+{
+  "times": [
+    {
+      "id": 1,
+      "nome": "São Paulo Futebol Clube",
+      "sigla": "SPFC",
+      "forca": 1
+    },
+    {
+      "id": 2,
+      "nome": "Clube de Regatas do Flamengo",
+      "sigla": "CRF",
+      "forca": 2
+    },
+    {
+      "id": 3,
+      "nome": "Sociedade Esportiva Palmeiras",
+      "sigla": "SEP",
+      "forca": 3
+    }
+  ]
+}
