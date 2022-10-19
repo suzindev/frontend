@@ -3,6 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.blue {
+    color: #314b4b;
+}
+
 .v-middle {
     vertical-align: middle;
 }
