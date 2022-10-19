@@ -16,8 +16,8 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { TeamCrudComponent } from './views/team-crud/team-crud.component';
 import { BlueDirective } from './directives/blue.directive';
-import { ForDirective } from './directives/for.directive';
 import { TeamCreateComponent } from './components/team/team-create/team-create.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,6 @@ import { TeamCreateComponent } from './components/team/team-create/team-create.c
     HomeComponent,
     TeamCrudComponent,
     BlueDirective,
-    ForDirective,
     TeamCreateComponent
   ],
   imports: [
@@ -38,7 +37,8 @@ import { TeamCreateComponent } from './components/team/team-create/team-create.c
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
