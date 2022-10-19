@@ -14,6 +14,6 @@ export class TeamCrudComponent implements OnInit {
   }
 
   navigateToTeamCreate(): void {
-    this.router.navigate(['/teams/create    '])
+    this.router.navigate(['/teams/create'])
   }
 }

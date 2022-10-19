@@ -17,7 +17,10 @@ import { HomeComponent } from './views/home/home.component';
 import { TeamCrudComponent } from './views/team-crud/team-crud.component';
 import { BlueDirective } from './directives/blue.directive';
 import { TeamCreateComponent } from './components/team/team-create/team-create.component';
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button'; 
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
