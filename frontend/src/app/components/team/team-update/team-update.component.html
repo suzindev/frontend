@@ -1,24 +1,49 @@
 <mat-card>
-    <mat-card-title>Alterar Time</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput placeholder="Nome"
-                [(ngModel)]="team.nome" name="nome">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Sigla"
-            [(ngModel)]="team.sigla" name="sigla">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Força"
-            [(ngModel)]="team.forca" name="forca">
-        </mat-form-field>
-    </form>
-    <button mat-raised-button (click)="updateTeam()" color="primary">
-        Atualizar
-    </button>
-    
-    <button mat-raised-button (click)="cancel()">
-        Cancelar
-    </button>
+  <mat-card-title>Alterar Time</mat-card-title>
+  <form #form="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        #nome="ngModel"
+        [(ngModel)]="team.nome"
+        name="nome"
+        required
+      />
+      <mat-error *ngIf="nome.invalid">Nome é obrigatório</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Sigla"
+        #sigla="ngModel"
+        [(ngModel)]="team.sigla"
+        name="sigla"
+        required
+      />
+      <mat-error *ngIf="sigla.invalid">Sigla é obrigatória</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Força"
+        pattern="[1-5]"
+        #forca="ngModel"
+        [(ngModel)]="team.forca"
+        name="forca"
+        required
+      />
+      <mat-error *ngIf="forca.invalid">Força inválida</mat-error>
+    </mat-form-field>
+  </form>
+  <button
+    mat-raised-button
+    (click)="updateTeam()"
+    color="primary"
+    [disabled]="!form.valid"
+  >
+    Atualizar
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
 </mat-card>
