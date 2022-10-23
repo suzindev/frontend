@@ -29,12 +29,6 @@
       "sigla": "TT",
       "forca": 1,
       "id": 5
-    },
-    {
-      "nome": "test",
-      "sigla": "t",
-      "forca": 0,
-      "id": 6
     }
   ]
 }

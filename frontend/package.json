@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/frontend/",
+    "ghpages": "angular-cli-ghpages --dir=dist/frontend",
+    "deploy": "npm run build & npm run ghpages",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
