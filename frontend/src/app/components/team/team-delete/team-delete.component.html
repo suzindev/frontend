@@ -1,21 +1,21 @@
 <mat-card>
-    <mat-card-title>Novo Time</mat-card-title>
+    <mat-card-title>Excluir Time</mat-card-title>
     <form>
         <mat-form-field>
             <input matInput placeholder="Nome"
-                [(ngModel)]="team.nome" name="nome">
+                [value]="team.nome" name="nome" disabled="">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Sigla"
-            [(ngModel)]="team.sigla" name="sigla">
+            [value]="team.sigla" name="sigla" disabled="">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Força"
-            [(ngModel)]="team.forca" name="forca">
+            [value]="team.forca" name="forca" disabled="">
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="createTeam()" color="primary">
-        Salvar
+    <button mat-raised-button (click)="deleteTeam()" color="warn">
+        Excluir
     </button>
     
     <button mat-raised-button (click)="cancel()">

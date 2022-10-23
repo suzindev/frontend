@@ -1,3 +1,5 @@
+import { TeamDeleteComponent } from './components/team/team-delete/team-delete.component';
+import { TeamUpdateComponent } from './components/team/team-update/team-update.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: "teams/create",
     component: TeamCreateComponent
+  },
+  {
+    path: "teams/update/:id",
+    component: TeamUpdateComponent
+  },
+  {
+    path: "teams/delete/:id",
+    component: TeamDeleteComponent
   }
 ];
 

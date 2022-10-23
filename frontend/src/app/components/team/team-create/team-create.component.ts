@@ -11,9 +11,9 @@ import { Router } from '@angular/router';
 export class TeamCreateComponent implements OnInit {
 
   team: Team = {
-    nome: 'Time Teste',
-    sigla: 'TT',
-    forca: 1
+    nome: '',
+    sigla: '',
+    forca: 0
   }
 
   constructor(private teamService: TeamService,
